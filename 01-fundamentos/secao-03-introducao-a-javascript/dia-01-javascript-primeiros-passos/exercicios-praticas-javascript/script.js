@@ -115,6 +115,16 @@ if(number1 % 2 == 0 || number3 % 2 == 0 || number5 % 2 == 0){
 }
 
 
+if(number1 % 2 == 1 || number3 % 2 == 1 || number5 % 2 == 1){
+    console.log('true')
+}else{
+    console.log('false')
+}
+
+
+
+
+
 
 
 
