@@ -94,3 +94,23 @@ switch(partName.toLowerCase()){
 }
 
 
+let gradeInPercentage = -50;
+
+if(gradeInPercentage >= 90){
+    console.log('A');
+}else if(gradeInPercentage >= 80){
+    console.log('B');
+}else if(gradeInPercentage >= 70){
+    console.log('C');
+}else if(gradeInPercentage >= 60){
+    console.log('D');
+}else if(gradeInPercentage >= 50){
+    console.log('E');
+}else if(gradeInPercentage < 50){
+    console.log('F');
+}else if(gradeInPercentage < 0 && gradeInPercentage > 100){
+    console.log('Numero inválido!');
+}
+
+
+
