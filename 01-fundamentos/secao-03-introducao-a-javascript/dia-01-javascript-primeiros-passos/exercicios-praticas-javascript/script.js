@@ -24,3 +24,28 @@ else if (number2 > number1){
     console.log(`O maior numero é ${number2} e o menor é ${number1}`)
 }
 
+
+let number3 = 500;
+
+if(number1 > number2 && number2 > number1){
+    console.log(`O maior numero é ${number2} e o menor é ${number1}`)
+}
+else if(number1 > number3 && number3 > number1){
+    console.log(`O maior numero é ${number3} e o menor é ${number1}`)
+}
+else if(number2 > number3 && number3 > number2){
+    console.log(`O maior numero é ${number2} e o menor é ${number3}`)
+}
+
+
+let number4 = 'zzz';
+
+if(number4 > 0){
+    console.log('Positive');
+}
+else if(number4 < 0){
+    console.log('Negative')
+}
+else{
+    console.log('Zero')
+}
