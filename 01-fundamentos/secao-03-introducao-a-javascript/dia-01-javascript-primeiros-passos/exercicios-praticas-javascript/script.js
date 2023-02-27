@@ -1,5 +1,15 @@
 let a = 25;
 let b = 15;
+let number1 = 400;
+let number2 = 3000;
+let number3 = 500;
+let number4 = 'zzz';
+let number5 = 77;
+let angle1 = 50;
+let angle2 = 50;
+let angle3 = 70;
+let partName = 'rainha';
+let gradeInPercentage = -50;
 
 let adicao = a + b;
 let subtracao = a - b;
@@ -14,9 +24,6 @@ console.log(divisao);
 console.log(modulo);
 
 
-let number1 = 400;
-let number2 = 3000;
-
 if(number1 > number2){
     console.log(`O maior numero é ${number1} e o menor é ${number2}`)
 }
@@ -24,8 +31,6 @@ else if (number2 > number1){
     console.log(`O maior numero é ${number2} e o menor é ${number1}`)
 }
 
-
-let number3 = 500;
 
 if(number1 > number2 && number2 > number1){
     console.log(`O maior numero é ${number2} e o menor é ${number1}`)
@@ -38,8 +43,6 @@ else if(number2 > number3 && number3 > number2){
 }
 
 
-let number4 = 'zzz';
-
 if(number4 > 0){
     console.log('Positive');
 }
@@ -50,10 +53,6 @@ else{
     console.log('Zero')
 }
 
-
-let angle1 = 50;
-let angle2 = 50;
-let angle3 = 70;
 
 let triangleResult = angle1 + angle2 + angle3;
 
@@ -67,8 +66,6 @@ else{
     console.log('resultado invalido')
 }
 
-
-let partName = 'rainha';
 
 switch(partName.toLowerCase()){
     case 'peão':
@@ -94,8 +91,6 @@ switch(partName.toLowerCase()){
 }
 
 
-let gradeInPercentage = -50;
-
 if(gradeInPercentage >= 90){
     console.log('A');
 }else if(gradeInPercentage >= 80){
@@ -111,6 +106,16 @@ if(gradeInPercentage >= 90){
 }else if(gradeInPercentage < 0 && gradeInPercentage > 100){
     console.log('Numero inválido!');
 }
+
+
+if(number1 % 2 == 0 || number3 % 2 == 0 || number5 % 2 == 0){
+    console.log('true')
+}else{
+    console.log('false')
+}
+
+
+
 
 
 
