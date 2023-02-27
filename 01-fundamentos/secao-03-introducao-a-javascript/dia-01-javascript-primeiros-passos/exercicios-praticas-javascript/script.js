@@ -49,3 +49,20 @@ else if(number4 < 0){
 else{
     console.log('Zero')
 }
+
+
+let angle1 = 50;
+let angle2 = 50;
+let angle3 = 70;
+
+let triangleResult = angle1 + angle2 + angle3;
+
+if(triangleResult === 180){
+    console.log('true')
+}
+else if(triangleResult !== 180){
+    console.log('false')
+}
+else{
+    console.log('resultado invalido')
+}
