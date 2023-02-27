@@ -1,15 +1,5 @@
 let a = 25;
 let b = 15;
-let number1 = 400;
-let number2 = 3000;
-let number3 = 500;
-let number4 = 'zzz';
-let number5 = 77;
-let angle1 = 50;
-let angle2 = 50;
-let angle3 = 70;
-let partName = 'rainha';
-let gradeInPercentage = -50;
 
 let adicao = a + b;
 let subtracao = a - b;
@@ -23,6 +13,10 @@ console.log(multiplicacao);
 console.log(divisao);
 console.log(modulo);
 
+
+let number1 = 400;
+let number2 = 3000;
+let number3 = 500;
 
 if(number1 > number2){
     console.log(`O maior numero é ${number1} e o menor é ${number2}`)
@@ -43,6 +37,8 @@ else if(number2 > number3 && number3 > number2){
 }
 
 
+let number4 = 'zzz';
+
 if(number4 > 0){
     console.log('Positive');
 }
@@ -53,6 +49,9 @@ else{
     console.log('Zero')
 }
 
+let angle1 = 50;
+let angle2 = 50;
+let angle3 = 70;
 
 let triangleResult = angle1 + angle2 + angle3;
 
@@ -66,6 +65,8 @@ else{
     console.log('resultado invalido')
 }
 
+
+let partName = 'rainha';
 
 switch(partName.toLowerCase()){
     case 'peão':
@@ -91,6 +92,8 @@ switch(partName.toLowerCase()){
 }
 
 
+let gradeInPercentage = -50;
+
 if(gradeInPercentage >= 90){
     console.log('A');
 }else if(gradeInPercentage >= 80){
@@ -108,6 +111,15 @@ if(gradeInPercentage >= 90){
 }
 
 
+let number5 = 77;
+
+if(number1 % 2 == 1 || number3 % 2 == 1 || number5 % 2 == 1){
+    console.log('true')
+}else{
+    console.log('false')
+}
+
+
 if(number1 % 2 == 0 || number3 % 2 == 0 || number5 % 2 == 0){
     console.log('true')
 }else{
@@ -115,11 +127,21 @@ if(number1 % 2 == 0 || number3 % 2 == 0 || number5 % 2 == 0){
 }
 
 
-if(number1 % 2 == 1 || number3 % 2 == 1 || number5 % 2 == 1){
-    console.log('true')
-}else{
-    console.log('false')
-}
+let costValue = 500;
+let saleValue = 1000;
+let costTax = costValue * 0.2
+
+
+if (costValue >= 0 && saleValue >= 0) {
+    let totalCost = costTax
+    let profit = (saleValue - totalCost) * 1000;
+    console.log(profit);
+} else {
+    console.log("Os valores não podem ser negativos!");
+};
+
+
+
 
 
 
