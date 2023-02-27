@@ -66,3 +66,31 @@ else if(triangleResult !== 180){
 else{
     console.log('resultado invalido')
 }
+
+
+let partName = 'rainha';
+
+switch(partName.toLowerCase()){
+    case 'peão':
+        console.log('Peão -> Se move somente para frente, uma casa por vez, sendo movido pela primeira vez pode mover duas casas');
+        break;
+    case 'bispo':
+        console.log('Bispo -> Se move em linha reta diagonalmente');
+        break;
+    case 'torre':
+        console.log('Torre -> Se move em linha reta horizontalmente e verticalmente');
+        break;
+    case 'cavalo':
+        console.log('Cavalo -> Unica peça que pode pular sobre outras peças, movendo-se horizontalmente e verticalmente, movendo-se em L');
+        break;
+    case 'rainha':
+        console.log('Rainha -> Se move em qualquer número de casa em linha reta, verticalmente, horizontalmente e diagonalmente');
+        break;
+    case 'rei':
+        console.log('Rei -> Se move em qualquer direção, horizontalmete, verticalmente e diagonalmente.');
+        break;
+    default:
+        console.log('Peça não existente')
+}
+
+
