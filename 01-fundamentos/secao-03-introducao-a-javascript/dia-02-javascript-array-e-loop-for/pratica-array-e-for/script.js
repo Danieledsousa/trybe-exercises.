@@ -34,3 +34,16 @@ for (let index = 0; index < numbers.length; index+=1) {
 console.log(maior)
 
 
+let oddNumbers = []
+for (let index = 0; index < numbers.length; index+=1) {
+    if(numbers[index] % 2 == 1){
+        oddNumbers.push(numbers[index])
+    }
+}
+console.log(oddNumbers.length)
+
+if(oddNumbers === 0){
+    console.log('Nenhum valor impar encontrado')
+}else{
+    console.log(oddNumbers);
+}
