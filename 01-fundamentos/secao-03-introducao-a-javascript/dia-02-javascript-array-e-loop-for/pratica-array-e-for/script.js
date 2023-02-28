@@ -15,3 +15,11 @@ for (let index = 0; index < numbers.length; index+=1) {
     average+=numbers[index] / numbers.length;
 }
 console.log(average)
+
+if(average > 20){
+    console.log('Valor maior que 20')
+}else{
+    console.log('Valor menor ou igual a 20')
+}
+
+
