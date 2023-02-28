@@ -72,6 +72,15 @@ for (let index = 0; index < numbers.length; index+=1) {
 
 let result = 1
 for(let index = 10; index>0; index-=1){
-    result = (result *index)
+    result = (result*index)
 }
 console.log(result)
+
+
+let word = 'tryber';
+let result2  = '';
+for (let index = word.length - 1; index >= 0; index-=1) {
+    result2 += word[index]
+    
+}
+console.log(result2)
