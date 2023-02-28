@@ -69,3 +69,9 @@ console.log(array)
 for (let index = 0; index < numbers.length; index+=1) {
     console.log(numbers[index]/2)
 }
+
+let result = 1
+for(let index = 10; index>0; index-=1){
+    result = (result *index)
+}
+console.log(result)
