@@ -9,3 +9,9 @@ for (let index = 0; index < numbers.length; index+=1) {
     sum+=numbers[index];
 }
 console.log(sum)
+
+let average = 0;
+for (let index = 0; index < numbers.length; index+=1) {
+    average+=numbers[index] / numbers.length;
+}
+console.log(average)
