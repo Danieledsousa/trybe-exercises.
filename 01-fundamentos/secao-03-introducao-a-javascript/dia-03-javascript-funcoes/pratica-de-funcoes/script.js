@@ -10,3 +10,9 @@ function subtractValue(value) {
     return balance - value;
 }
 console.log(subtractValue(50));
+
+
+function multiplyValue(value) {
+    return balance * value;
+}
+console.log(multiplyValue(90));
