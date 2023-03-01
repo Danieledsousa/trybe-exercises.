@@ -65,3 +65,45 @@ for (let index = 1; index <= 25; index+=1) {
 }
 console.log(array)
 
+
+for (let index = 0; index < numbers.length; index+=1) {
+    console.log(numbers[index]/2)
+}
+
+let result = 1
+for(let index = 10; index>0; index-=1){
+    result = (result*index)
+}
+console.log(result)
+
+
+let word = 'tryber';
+let result2  = '';
+for (let index = word.length - 1; index >= 0; index-=1) {
+    result2 += word[index]
+    
+}
+console.log(result2);
+
+
+let array2 = ['java', 'javascript', 'python', 'html', 'css'];
+let bigger = '';
+let smaller = array2[0];
+
+for (let index = 0; index < array2.length; index+=1) {
+    if(array2[index].length > bigger.length){
+        bigger = array2[index]
+    }
+    
+}
+console.log(bigger)
+
+for (let index = 0; index < array2.length; index+=1) {
+    if(array2[index].length < smaller.length){
+        smaller = array2[index]
+    }
+    
+}
+console.log(smaller);
+
+
