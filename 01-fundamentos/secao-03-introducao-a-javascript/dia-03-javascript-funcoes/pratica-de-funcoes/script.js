@@ -1,6 +1,7 @@
 let balance = 300;
 
-function trybeBank(value) {
+function addValue(value) {
     return balance + value
 }
-console.log(trybeBank(80));
+console.log(addValue(80));
+
