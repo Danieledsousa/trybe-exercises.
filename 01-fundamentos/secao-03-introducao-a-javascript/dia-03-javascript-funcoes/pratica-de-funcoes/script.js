@@ -16,3 +16,9 @@ function multiplyValue(value) {
     return balance * value;
 }
 console.log(multiplyValue(90));
+
+
+function divideValue(value) {
+    return balance / value
+}
+console.log(divideValue(3));
