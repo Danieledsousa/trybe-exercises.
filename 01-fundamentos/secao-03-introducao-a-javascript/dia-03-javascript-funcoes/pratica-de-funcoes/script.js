@@ -1,6 +1,24 @@
 let balance = 300;
 
-function trybeBank(value) {
-    return balance + value
+function addValue(value) {
+    return balance + value;
 }
-console.log(trybeBank(80));
+console.log(addValue(80));
+
+
+function subtractValue(value) {
+    return balance - value;
+}
+console.log(subtractValue(50));
+
+
+function multiplyValue(value) {
+    return balance * value;
+}
+console.log(multiplyValue(90));
+
+
+function divideValue(value) {
+    return balance / value
+}
+console.log(divideValue(3));
