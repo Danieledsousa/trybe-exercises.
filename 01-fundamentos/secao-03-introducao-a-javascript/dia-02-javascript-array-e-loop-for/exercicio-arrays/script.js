@@ -8,3 +8,4 @@ console.log(indexOfPortfolio);
 
 menu.push('Contato');
 console.log(menu);
+
