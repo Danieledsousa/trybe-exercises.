@@ -16,3 +16,14 @@ for (let index = 0; index < numbers2.length; index+=1) {
     }
 }
 console.log(multipliedNumbers)
+
+
+let naturalNumber = 5;
+
+for (let index = 0; index < naturalNumber; index+=1) {
+    let squareNumber = "";
+    for (let indexSquare = 0; indexSquare < naturalNumber; indexSquare+=1) {
+        squareNumber += "*";
+    }
+    console.log(squareNumber);
+}
