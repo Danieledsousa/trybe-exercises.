@@ -58,18 +58,35 @@ let naturalNumber3 = 5;
 
 for (let index = 0; index < naturalNumber3; index+=1) {
     let pyramid = "";
-    for (let indexPyramid = 0; indexPyramid < naturalNumber3 - index - 1; indexPyramid+=1) {  // itera de 0 a n-i-2
+    for (let indexPyramid = 0; indexPyramid < naturalNumber3 - index - 1; indexPyramid+=1) {  
         pyramid += " ";  
     }
-    for (let indexPyramid = 0; indexPyramid < 2 * index + 1; indexPyramid+=1) {  // itera de 0 a 2*i
+    for (let indexPyramid = 0; indexPyramid < 2 * index + 1; indexPyramid+=1) {  
         pyramid += "*";  
     }
     console.log(pyramid); 
 }
 
 
+let naturalNumber4 = 5; 
 
-
-
+for (let index = 0; index < naturalNumber4; index+=1) {  
+    let pyramid = "";
+    for (let indexPyramid = 0; indexPyramid < naturalNumber4 - index - 1; indexPyramid+=1) {  
+        pyramid += " ";  
+    }
+        pyramid += "*";  
+    for (let indexPyramid = 0; indexPyramid < 2 * index - 1; indexPyramid+=1) { 
+        if (index === naturalNumber4 - 1 || indexPyramid % 2 === 0) { 
+            pyramid += " ";  
+        } else {
+        pyramid += "*";  
+    }
+}
+    if (index !== 0) {  
+        pyramid += "*";  
+    }
+    console.log(pyramid);
+}
 
 
