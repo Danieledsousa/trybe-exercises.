@@ -9,3 +9,6 @@ const player = {
 };
 
 console.log('A jogadora ' + player.name + ' ' + player.lastName + ' tem ' + player.age + ' anos de idade.');
+
+player.bestInTheWord = [2006, 2007, 2008, 2009, 2010, 2018]
+console.log(player)
