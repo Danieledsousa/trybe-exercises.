@@ -41,10 +41,14 @@ for (let index = 0; index < naturalNumber; index+=1) {
 
 let naturalNumber2 = 5;
 
-for (let index = naturalNumber2; index >= 1; index-=1) {
+for (let index = 1; index <= naturalNumber2; index+=1) {
     let invertedTriangleNumber = "";
-    for (let indexInvertedTriangle = index; indexInvertedTriangle <= naturalNumber2; indexInvertedTriangle+=1) {
-        invertedTriangleNumber += "*";
+    for (let indexInvertedTriangle = 1; indexInvertedTriangle <= naturalNumber2; indexInvertedTriangle +=1) {
+        if(indexInvertedTriangle <= naturalNumber2 - index){
+            invertedTriangleNumber += " ";
+        }else{
+            invertedTriangleNumber += "*";
+        }
     }
     console.log(invertedTriangleNumber);
-}
+} 
