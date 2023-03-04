@@ -90,3 +90,13 @@ for (let index = 0; index < naturalNumber4; index+=1) {
 }
 
 
+
+let divisors = 1;
+let number = 31;
+
+for (let index = 2; index <= number; index += 1) {
+    if (number % index === 0) divisors += 1;
+}
+
+if (divisors === 2) console.log(number + ' é primo');
+else console.log(number + ' não é primo');
