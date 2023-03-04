@@ -38,3 +38,8 @@ const pessoa = {
 
     const numeroAleatorio = () => Math.random();
     console.log(numeroAleatorio());
+
+
+    const hello = (nome) => `Olá, ${nome}!`
+    let nome = 'Ivan';
+    console.log(hello(nome));
