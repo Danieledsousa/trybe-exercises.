@@ -18,6 +18,7 @@ for (let index = 0; index < numbers2.length; index+=1) {
 console.log(multipliedNumbers)
 
 
+
 let naturalNumber = 5;
 
 for (let index = 0; index < naturalNumber; index+=1) {
@@ -26,4 +27,14 @@ for (let index = 0; index < naturalNumber; index+=1) {
         squareNumber += "*";
     }
     console.log(squareNumber);
+}
+
+
+
+for (let index = 0; index < naturalNumber; index+=1) {
+    let triangleNumber = "";
+    for (let indexTriangle = 0; indexTriangle <= index; indexTriangle+=1) {
+        triangleNumber += "*";
+    }
+    console.log(triangleNumber);
 }
