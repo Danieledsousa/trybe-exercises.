@@ -4,3 +4,14 @@ function imprimeIdade() {
     }
 }
 imprimeIdade();
+
+const pessoa = {
+    nome: 'Henri',
+    idade: 20
+    }
+
+    pessoa.nome = 'Daniele';
+    pessoa.idade = 28;
+    
+    console.log('Nome:', pessoa.nome);
+    console.log('Idade:', pessoa.idade);
