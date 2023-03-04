@@ -12,6 +12,11 @@ const pessoa = {
 
     pessoa.nome = 'Daniele';
     pessoa.idade = 28;
-    
+
     console.log('Nome:', pessoa.nome);
     console.log('Idade:', pessoa.idade);
+
+
+    let favoriteFood = 'Lasanha';
+    favoriteFood = 'Hambúrguer';
+    console.log(favoriteFood);
