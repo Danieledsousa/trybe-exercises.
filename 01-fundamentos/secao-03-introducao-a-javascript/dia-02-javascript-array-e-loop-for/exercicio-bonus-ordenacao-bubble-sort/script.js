@@ -52,3 +52,24 @@ for (let index = 1; index <= naturalNumber2; index+=1) {
     }
     console.log(invertedTriangleNumber);
 } 
+
+
+let naturalNumber3 = 5;  
+
+for (let index = 0; index < naturalNumber3; index+=1) {
+    let pyramid = "";
+    for (let indexPyramid = 0; indexPyramid < naturalNumber3 - index - 1; indexPyramid+=1) {  // itera de 0 a n-i-2
+        pyramid += " ";  
+    }
+    for (let indexPyramid = 0; indexPyramid < 2 * index + 1; indexPyramid+=1) {  // itera de 0 a 2*i
+        pyramid += "*";  
+    }
+    console.log(pyramid); 
+}
+
+
+
+
+
+
+
