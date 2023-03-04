@@ -30,11 +30,21 @@ for (let index = 0; index < naturalNumber; index+=1) {
 }
 
 
-
 for (let index = 0; index < naturalNumber; index+=1) {
     let triangleNumber = "";
     for (let indexTriangle = 0; indexTriangle <= index; indexTriangle+=1) {
         triangleNumber += "*";
     }
     console.log(triangleNumber);
+}
+
+
+let naturalNumber2 = 5;
+
+for (let index = naturalNumber2; index >= 1; index-=1) {
+    let invertedTriangleNumber = "";
+    for (let indexInvertedTriangle = index; indexInvertedTriangle <= naturalNumber2; indexInvertedTriangle+=1) {
+        invertedTriangleNumber += "*";
+    }
+    console.log(invertedTriangleNumber);
 }
