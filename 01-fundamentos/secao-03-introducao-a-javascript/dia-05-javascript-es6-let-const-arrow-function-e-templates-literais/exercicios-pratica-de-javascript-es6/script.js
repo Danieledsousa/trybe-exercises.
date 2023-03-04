@@ -43,3 +43,9 @@ const pessoa = {
     const hello = (nome) => `Olá, ${nome}!`
     let nome = 'Ivan';
     console.log(hello(nome));
+
+
+    const nomeCompleto = (nome2, sobrenome) => `${nome2} ${sobrenome}`;
+    let nome2 = 'Ivan';
+    let sobrenome = 'Pires';
+    console.log(nomeCompleto(nome, sobrenome));
