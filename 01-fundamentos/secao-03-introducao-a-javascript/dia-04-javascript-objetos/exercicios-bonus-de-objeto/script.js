@@ -59,4 +59,14 @@ console.log(getNumberOfStudents(allLessons));
 function keyPosition(obj, number) {
     return Object.values(obj)[number];
 }
-console.log(keyPosition(lesson2 , 2))
+console.log(keyPosition(lesson2 , 2));
+
+function verifyPair(obj, key, value) {
+    let entries = Object.entries(obj);
+    let isEqual = false;
+    for (let index in entries) {
+        if (entries[index][0] === key && entries[index][1] === value) isEqual = true;
+    }
+    return isEqual;
+}
+console.log(verifyPair(lesson3,'materia','História'));
