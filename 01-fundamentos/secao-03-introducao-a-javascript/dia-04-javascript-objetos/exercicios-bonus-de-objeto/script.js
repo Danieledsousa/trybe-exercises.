@@ -34,3 +34,7 @@ function listObjectSize(obj) {
 }
 console.log(listObjectSize(lesson1));
 
+function objectValue(obj) {
+    return Object.values(obj);
+}
+console.log(objectValue(lesson3))
