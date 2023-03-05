@@ -28,3 +28,9 @@ function listKeys(obj) {
     return Object.keys(obj);
 }
 console.log(listKeys(lesson3));
+
+function listObjectSize(obj) {
+    return Object.keys(obj).length;
+}
+console.log(listObjectSize(lesson1));
+
