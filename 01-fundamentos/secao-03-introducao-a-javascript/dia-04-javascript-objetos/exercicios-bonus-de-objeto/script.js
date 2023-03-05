@@ -54,4 +54,9 @@ function getNumberOfStudents(obj) {
     }
     return sum
 }
-console.log(getNumberOfStudents(allLessons))
+console.log(getNumberOfStudents(allLessons));
+
+function keyPosition(obj, number) {
+    return Object.values(obj)[number];
+}
+console.log(keyPosition(lesson2 , 2))
