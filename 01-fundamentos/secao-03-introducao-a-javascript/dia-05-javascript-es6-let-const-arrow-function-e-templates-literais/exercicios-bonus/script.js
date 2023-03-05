@@ -11,4 +11,12 @@ function substituaX(nome){
     }
     return final
 }
-console.log(substituaX('Bebeto'))
+console.log(substituaX('Bebeto'));
+
+
+function minhasSkills(value){
+    const skills = ['javascript','HTML', 'CSS'];
+    let concat = `${value} Minhas três principais habilidades são: ${skills}` 
+    return concat
+}
+console.log(minhasSkills(substituaX('Bebeto')));
