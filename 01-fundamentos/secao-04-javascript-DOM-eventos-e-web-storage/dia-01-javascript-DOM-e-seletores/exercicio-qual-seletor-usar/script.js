@@ -1,24 +1,46 @@
-const containerHeader = document.getElementById('header-container');
-containerHeader.style.backgroundColor = 'green';
 
-const sectionEmergencyTasks = document.querySelector('.emergency-tasks');
-sectionEmergencyTasks.style.backgroundColor = 'pink';
 
-const sectionNoEmergencyTasks = document.querySelector('.no-emergency-tasks');
-sectionNoEmergencyTasks.style.backgroundColor = 'yellow';
+const header = document.getElementById('header-container');
+header.style.background = 'green';
 
-const title = document.querySelector('.list-emergency .list1');
-title.style.backgroundColor = 'purple';
+const emergencyTasks = document.querySelector('.emergency-tasks');
+emergencyTasks.style.background = 'pink';
 
-const title2 = document.querySelector('.list-emergency .list2');
-title2.style.backgroundColor = 'purple';
+const list1 = document.querySelector('.list1');
+list1.style.textAlign = 'center';
 
-const title3 = document.querySelector('.list-no-emergency .list3');
-title3.style.backgroundColor = 'black';
+const list2 = document.querySelector('.list2');
+list2.style.textAlign = 'center';
 
-const title4 = document.querySelector('.list-no-emergency .list4');
-title4.style.backgroundColor = 'black';
+const list3 = document.querySelector('.list3');
+list3.style.textAlign = 'center';
 
-const footer = document.getElementById('footer-container');
-footer.style.backgroundColor = 'green'
+const list4 = document.querySelector('.list4');
+list4.style.textAlign = 'center';
+
+const noEmergencyTasks = document.querySelector('.no-emergency-tasks');
+noEmergencyTasks.style.background = 'yellow';
+
+const listEmergency1 = document.querySelector('.list-emergency > .list1');
+        listEmergency1.style.background = 'purple';
+        listEmergency1.style.heigth = '50px';
+
+
+const listEmergency2 = document.querySelector('.list-emergency > .list2');
+        listEmergency2.style.background = 'purple';
+        listEmergency2.style.heigth = '50px';
+    
+
+const listNoEmergency1 = document.querySelector('.list-no-emergency > .list3');
+        listNoEmergency1.style.background = 'black';
+        listNoEmergency1.style.heigth = '50px';
+
+
+const listNoEmergency2 = document.querySelector('.list-no-emergency > .list4');
+        listNoEmergency2.style.background = 'black';
+        listNoEmergency2.style.heigth = '50px';
+    
+
+const footerContainer = document.getElementById('footer-container');
+footerContainer.style.background = 'green';
 
