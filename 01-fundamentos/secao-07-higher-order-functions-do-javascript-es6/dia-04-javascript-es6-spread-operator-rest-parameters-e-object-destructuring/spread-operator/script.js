@@ -2,7 +2,7 @@
 const specialFruit = ['uva', 'manga', 'banana'];
 
 // Faça uma lista de complementos que você gostaria de adicionar
-const additionalItens = ['maçã', 'leite condensado', 'creme de leite'];
+const additionalItens = ['maçã', 'creme de leite', 'leite condensado'];
 
 const fruitSalad = (fruit, additional) => {
   // Escreva sua função aqui
