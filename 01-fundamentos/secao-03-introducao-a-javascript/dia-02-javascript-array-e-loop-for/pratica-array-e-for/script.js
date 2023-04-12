@@ -45,12 +45,12 @@ console.log(oddNumbers.length)
 if(oddNumbers === 0){
     console.log('Nenhum valor impar encontrado')
 }else{
-    console.log(oddNumbers);
+    console.log(oddNumbers.length);
 }
 
 
 let menor = numbers[0];
-for (let index = 0; index < numbers.length; index+=1) {
+for (let index = 1; index < numbers.length; index+=1) {
     if(numbers[index] < menor){
         menor = numbers[index]
     }
@@ -70,11 +70,13 @@ for (let index = 0; index < numbers.length; index+=1) {
     console.log(numbers[index]/2)
 }
 
-let result = 1
-for(let index = 10; index>0; index-=1){
-    result = (result*index)
+let numero = 10; 
+let fatorial = 1;
+
+for(let index = 1; index <= numero; index+=1){
+  fatorial = fatorial * index;
 }
-console.log(result)
+console.log(`O fatorial de ${numero} é ${fatorial}`);
 
 
 let word = 'tryber';
@@ -87,7 +89,7 @@ console.log(result2);
 
 
 let array2 = ['java', 'javascript', 'python', 'html', 'css'];
-let bigger = '';
+let bigger = array2[0];
 let smaller = array2[0];
 
 for (let index = 0; index < array2.length; index+=1) {
