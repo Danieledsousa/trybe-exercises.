@@ -2,28 +2,39 @@ import './App.css';
 import React from 'react';
 
 class App extends React.Component {
-  handleClick = () => {
-    console.log('Botão clicado')
+  constructor() {
+    super();
+    this.state = {
+      clickBtnOne: 0,
+      clickBtnTwo: 0,
+      clickBtnThree: 0,
+    }
   }
   
   handleButtonOne = () => {
-    console.log('Botão clicado')
+    this.setState((prevState) => ({
+      clickBtnOne:prevState.clickBtnOne + 1,
+    }))
   }
   
   handleButtonTwo = () => {
-    console.log('Botão clicado')
+    this.setState((prevState) => ({
+      clickBtnTwo: prevState.clickBtnTwo + 1,
+    }))
   }
   
   handleButtonThree = () => {
-    console.log('Botão clicado')
+    this.setState((prevState) => ({
+      clickBtnThree:prevState.clickBtnThree + 1,
+    }))
   }
   render() {
+  const { clickBtnOne, clickBtnTwo, clickBtnThree } = this.state;
   return (
     <div className="App">
-      <button onclick={ this.handleClick }>Botao</button>
-      <button onclick={ this.handleButtonOne }>Botao 1</button>
-      <button onclick={ this.handleButtonTwo }>Botao 2</button>
-      <button onclick={ this.handleButtonThree }>Botao 3</button>
+      <button onclick={ this.handleButtonOne }>{`Cliques botão 1: ${clickBtnOne}`}</button>
+      <button onclick={ this.handleButtonTwo }>{`Cliques botão 1: ${clickBtnTwo}`}</button>
+      <button onclick={ this.handleButtonThree }>{`Cliques botão 1: ${clickBtnThree}`}</button>
     </div>
   );
   }
