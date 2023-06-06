@@ -4,36 +4,35 @@ import { composeWithDevTools } from "@redux-devtools/extension";
 const INITIAL_STATE = {
     status: 'offline',
     theme: 'dark',
-  };
+};
 
-  const reducer = (state = INITIAL_STATE, action) => {
-    if(action.type === 'TOGGLE_THEME' || action.theme === 'dark'){
-        return {
-            ...state,
-            theme: state.theme === 'dark' ? 'light' : 'dark',
-        }
-    }else if(action.type === 'TOGGLE_STATUS') {
-        return {
-            ...state,
-            status: state.status === 'offline' ? 'online' : 'offline',
-        }
-    }else{
-        return state
+const reducer = (state = INITIAL_STATE, action) => {
+    switch(action.type) {
+        case 'TOGGLE_THEME':
+            return { ...state,
+                theme: state.theme === 'dark' ? 'light' : 'dark',
+            }
+        case 'TOGGLE_STATE':
+            return {...state,
+                status: state.status === 'offline' ? 'online' : 'offline',
+            }
+        default:
+            return state;
     }
-  }
+}
 
-  const store = createStore(reducer, composeWithDevTools())
+const store = createStore(reducer, composeWithDevTools())
 
-  const themeButton = document.getElementById('toggle-theme');
-  const statusButton = document.getElementById('toggle-status');
+const themeButton = document.getElementById('toggle-theme');
+const statusButton = document.getElementById('toggle-status');
 
-  themeButton.addEventListener('click', () => {
+themeButton.addEventListener('click', () => {
     store.dispatch({type: 'TOGGLE_THEME'})
-  });
+});
 
-  statusButton.addEventListener('click', () => {
+statusButton.addEventListener('click', () => {
     store.dispatch({type: 'TOGGLE_STATUS'})
-  });
+});
 
 store.subscribe(() => {
     const state = store.getState();
@@ -44,17 +43,17 @@ store.subscribe(() => {
         themeButton.innerText = 'Dark Mode';
         body.style.backgroundColor = '#fff';
         body.style.color = '#333';
-      } else {
+    } else {
         themeButton.innerText = 'Light Mode';
         body.style.backgroundColor = '#333';
         body.style.color = '#fff';
-      }
+    }
     
-      if (state.status === 'online') {
+    if (state.status === 'online') {
         statusButton.innerText = 'Ficar Offline';
         status.innerText = 'Online';
-      } else {
+    } else {
         statusButton.innerText = 'Ficar Online';
         status.innerText = 'Offline';
-      }
+    }
 }) 
